@@ -205,6 +205,7 @@ define('lg_request_mark_todo','Um diesen Effekt zu erhalten...');
 define('lg_request_mark_type','Eingeben...');
 define('lg_request_mark_full','Kompletter Syntax anzeigen');
 define('lg_request_viewfull','ganze Grösse');
+define('lg_request_view','View');
 define('lg_request_fwd','Fwd');
 define('lg_request_unkownid','unbekannte AnfragenID');
 define('lg_request_not_a_valid_email', 'keine gültige Email addresse');

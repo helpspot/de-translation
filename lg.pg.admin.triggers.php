@@ -25,6 +25,7 @@ define('lg_admin_trigger_onupdate','Updated');
 define('lg_admin_trigger_colid','ID');
 define('lg_admin_trigger_options','Options');
 define('lg_admin_trigger_hourlabel','Trigger in effect');
+define('lg_admin_trigger_log','Log trigger runs in request history');
 define('lg_admin_trigger_anyhours','At all times');
 define('lg_admin_trigger_bizhours','Business hours only');
 define('lg_admin_trigger_offhours','Outside of business hours only');

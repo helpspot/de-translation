@@ -300,4 +300,6 @@ define('lg_admin_settings_saturday','Saturday');
 define('lg_admin_settings_sunday','Sunday');
 define('lg_admin_settings_bizhours_error','One of your business hours has an end time before the start time');
 define('lg_admin_settings_prefix_error','The email prefix should contain only letters');
+define('lg_admin_settings_allow_cc','Allow CC email addresses');
+define('lg_admin_settings_allow_subject','Allow customer defined subject');
 ?>
