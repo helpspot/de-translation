@@ -62,4 +62,5 @@ define('lg_filter_requests_ogcustomfields','Custom Fields');
 define('lg_filter_requests_ogdatetime','Date and Time');
 define('lg_filter_requests_ogspecial','Special Columns');
 define('lg_filter_requests_ogother','Other');
+define('lg_filter_requests_ointegrations','Integrations');
 ?>

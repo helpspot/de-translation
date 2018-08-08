@@ -104,6 +104,23 @@ define('lg_reports_usebizhours_exp','<b>Business hours can be set in Admin->Sett
 											 	<li>If a request is opened outside business hours, but the first response is in hours the closest next business hour is used as the opened time.</li>
 											 	<li>If neither is in business hours the next business hour from the opened date is used and the closest previous business hour is used for the first response time.</li>
 											 </ul>');
+define('lg_reports_resolution_allhours_exp','The calculation is done by simply subtracting the open time from the time of the request being closed. Business hours are not factored in.');
+define('lg_reports_resolution_usebizhours_exp','<b>Business hours can be set in Admin->Settings->Business Hours</b><br />Determining if a time is in business hours is a surprisingly complicated task. HelpSpot does its best to use a reasonable set of assumptions in the calculation of business hours, but they should still be viewed as approximate values.
+	<br /><br />The basic rules we apply are:
+		<ul>
+			<li>If a request is opened in business hours, but is closed outside hours the closest previous business hour is used as the resolution time.</li>
+			<li>If a request is opened outside business hours, but the request is resolved in business hours the closest next business hour is used as the opened time.</li>
+			<li>If neither is in business hours the next business hour from the opened date is used and the closest previous business hour is used for the closed time.</li>
+		</ul>');
+define('lg_reports_assignment_allhours_exp','The calculation is done by simply subtracting the open time from the time the request is assigned to a staff member. Business hours are not factored in.');
+define('lg_reports_assignment_usebizhours_exp','<b>Business hours can be set in Admin->Settings->Business Hours</b><br />Determining if a time is in business hours is a surprisingly complicated task. HelpSpot does its best to use a reasonable set of assumptions in the calculation of business hours, but they should still be viewed as approximate values.
+	<br /><br />The basic rules we apply are:
+	<ul>
+		<li>Requests with no assignment are not included</li>
+		<li>If a request is opened in business hours, but the assignment is outside hours the closest previous business hour is used as the assignment time.</li>
+		<li>If a request is opened outside business hours, but the assignment is in hours the closest next business hour is used as the opened time.</li>
+		<li>If neither is in business hours the next business hour from the opened date is used and the closest previous business hour is used for the assignment time.</li>
+	</ul>');																						  
 define('lg_reports_chartlabel_requests','Requests');
 define('lg_reports_chartlabel_requeststoday','Requests Today');
 define('lg_reports_chartlabel_replies','Reply Count');

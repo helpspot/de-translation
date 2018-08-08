@@ -51,6 +51,7 @@ define('lg_admin_portaltemplates_temp_request_history','List of requests visitor
 define('lg_admin_portaltemplates_temp_search','Search results page');
 define('lg_admin_portaltemplates_temp_searchbox','HTML for search box used across all portal pages');
 define('lg_admin_portaltemplates_temp_tag_search','List of pages/topics matching a knowledge tag');
+define('lg_admin_portaltemplates_temp_terms','HTML Elements for agreeing to the terms and privacy policy.');
 
 define('lg_admin_portaltemplates_primary','Primary Portal');
 ?>

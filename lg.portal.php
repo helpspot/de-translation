@@ -71,6 +71,7 @@ define('lg_portal_req_firstname','Vorname');
 define('lg_portal_req_lastname','Nachname');
 define('lg_portal_req_email','Email');
 define('lg_portal_req_phone','Telefon');
+define('lg_portal_req_subject','Betreff');
 define('lg_portal_req_urgent','Ist diese Anfrage dringend?');
 define('lg_portal_req_category','Wie würden Sie diese Anfrage kategorisieren?');
 define('lg_portal_req_yes','Ja');
@@ -130,4 +131,8 @@ define('lg_portal_password_reset','Ein neues Passwort für Ihren Account wurde a
 define('lg_portal_tagsearch','Tag');
 define('lg_portal_tagsearch_books','übereinstimmende Wissensbeiträge');
 define('lg_portal_tagsearch_forums','übereinstimmende Forumbeiträge');
+define('lg_portal_agree_terms_privacy', 'I agree to the <a href="%s" target="_blank">Terms of Service</a> and <a href="%s" target="_blank">Privacy Policy</a>');
+define('lg_portal_agree_terms', 'I agree to the <a href="%s" target="_blank">Terms of Service</a>');
+define('lg_portal_agree_privacy', 'I agree to the <a href="%s" target="_blank">Privacy Policy</a>');
+define('lg_portal_req_terms', 'You must agree to the terms');
 ?>
