@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -23,6 +25,9 @@ define('lg_admin_mailboxes_trackidmissing','Tracking ID (##TRACKING_ID##) is mis
 define('lg_admin_mailboxes_help','Configuring a mailbox allows HelpSpot to check mail from a specified email account. Incoming messages are filtered for spam and turned into requests.
 									Administrators can opt to specify automated assignment to categories and corresponding default staff member. ');
 define('lg_admin_mailboxes_mailbox','Mailbox');
+define('lg_admin_mailboxes_archive', 'Archive Mail');
+define('lg_admin_mailboxes_archive_note', 'With this enabled mail will be moved to a "helpspot_archive_folder" instead of deleting the email. This only works with imap.');
+define('lg_admin_mailboxes_deletemsg', 'Note: HelpSpot deletes emails from the mailbox if this is disabled.');
 define('lg_admin_mailboxes_mbuser','Username');
 define('lg_admin_mailboxes_mbhost','Host Name');
 define('lg_admin_mailboxes_mbpass','Passwort');
@@ -134,10 +139,8 @@ Zugriffsschlüssel: ##ACCESSKEY##</p>
 <hr width="80%">
 
 <p>Vergessen Sie nicht unsere anderen Hilfestellungen:<br />
-Wissensdatenbank: <a href="##KNOWLEDGEBOOKURL##">##KNOWLEDGEBOOKURL##</a><br />
-Forum: <a href="##FORUMURL##">##FORUMURL##</a></p>
+Wissensdatenbank: <a href="##KNOWLEDGEBOOKURL##">##KNOWLEDGEBOOKURL##</a></p>
 
 </body>
 </html>
 ');
-?>
