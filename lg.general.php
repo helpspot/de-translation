@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -24,15 +26,19 @@ define('lg_js_confirmation','Bestätigen');
 define('lg_button_ok','OK');
 define('lg_button_cancel','Abbrechen');
 define('lg_button_close','Schliessen');
-define('lg_maxattempts','Login fehlgeschlagen. 5 Fehlversuche, bitte warten Sie eine Minute und probieren Sie es im Anschluss erneut.');
-define('lg_loginfailed','Login fehlgeschlagen. Bitte erneut versuchen.');
 define('lg_logintitle','Login');
 define('lg_loginbutton','Anmelden');
+define('lg_logbackin', 'Log Back In');
+define('lg_logged_out', 'You have been logged out!');
+define('lg_login_trouble', 'Having trouble logging in?');
+define('lg_login_use_default', 'Use HelpSpot\'s default authentication to login and fix any issues');
+define('lg_login_authenticating', 'Authenticating...');
 define('lg_emailpassword','Passwort neu setzen');
 define('lg_emailpasswordsent','Link zum zurücksetzen des Passworts versendet. Bitte überprüfen Sie ihr Mailpostfach.');
 define('lg_providemail','Please provide an email');
 define('lg_logout','Abmelden');
 define('lg_prefs','Einstellungen');
+define('lg_options', 'Options');
 define('lg_spam','SPAM');
 define('lg_trash','Papierkorb');
 define('lg_error','Fehler');
@@ -63,14 +69,16 @@ define('lg_academy','Training');
 define('lg_rss','RSS Feed');
 define('lg_social','Social');
 define('lg_partner','Partner Programm');
-define('lg_betafeedback','Beta Feedback');
 define('lg_twitter','Twitter');
 define('lg_twitter_ex','Chatte mit uns auf Twitter');
 define('lg_facebook','Facebook');
 define('lg_facebook_ex','Werde ein Fan auf unserer Facebookseite');
 define('lg_email_ex','weiter empfehlen');
 define('lg_trialexpires','Ihr Testzeitraum läuft aus');
+define('lg_freestart', 'Need more users, support, or hosting?');
+define('lg_upgrade', 'Upgrade to Paid');
 define('lg_purchase','Kaufen');
+define('lg_purchase_here', 'Purchase here');
 define('lg_enabled','Aktiviert');
 define('lg_disabled','Deaktiviert');
 define('lg_setorder','Reihenfolge bestimmen');
@@ -102,6 +110,7 @@ define('lg_at_reqpusherror2','Request Push ERROR: Your class could not be initia
 define('lg_systemname','System');
 define('lg_systemnameportal','Help Desk Nachrichten');
 define('lg_jsmenu_appresponseempty','nicht Verfügbar. Die Button oben benutzen um zu erstellen.');
+define('lg_response_shortcut', 'Type # for autocompletion');
 define('lg_jsmenu_nokb','Keine  knowledge books verfügbar');
 define('lg_jsmenu_respmostused','meis genutzt');
 define('lg_jsmenu_manageresponses','Antworten verwalten');
@@ -239,13 +248,16 @@ define('lg_lookup_filter_custid','Kundenummer');
 define('lg_lookup_filter_emailtitle','Emailbetreff');
 define('lg_lookup_filter_timeopen','geöffnet');
 define('lg_lookup_filter_timeopen2','Eröffnungsdatum');
+define('lg_lookup_filter_datetimeopen', 'Date and Time Opened');
 define('lg_lookup_filter_timeclosed','Geschlossen');
 define('lg_lookup_filter_timeclosed2','Abschlussdatum');
+define('lg_lookup_filter_datetimeclosed', 'Date and Time Closed');
 define('lg_lookup_filter_trashedon','In Papierkorb an');
 define('lg_lookup_filter_category','Kategorie');
 define('lg_lookup_filter_status','Status');
 define('lg_lookup_filter_open','offen');
 define('lg_lookup_filter_open2','offen/geschlossen');
+define('lg_lookup_filter_readunread', 'Read / Unread');
 define('lg_lookup_filter_isrepliedto','');
 define('lg_lookup_filter_isrepliedto2','geantwortet an');
 define('lg_lookup_filter_assignedto','zugewiesen an');
@@ -266,6 +278,9 @@ define('lg_lookup_filter_attachment2','Anhang');
 define('lg_lookup_filter_timetrack','Zeit');
 define('lg_lookup_filter_timetrack2','Zeit Tracker Total');
 define('lg_lookup_filter_lastupdate','letzte Aktualisierung');
+define('lg_lookup_filter_thermostat_nps_score', 'Thermostat NPS Score');
+define('lg_lookup_filter_thermostat_csat_score', 'Thermostat CSAT Score');
+define('lg_lookup_filter_thermostat_feedback', 'Thermostat Feedback');
 define('lg_lookup_filter_lastpubupdate','letztes öffentliche Aktualisierung');
 define('lg_lookup_filter_lastcustupdate','letzte Kundenaktualisierung');
 define('lg_lookup_filter_speedtofirstresponse','Zeit bis zur ersten Antwort (Stunden gesamt)');
@@ -289,6 +304,8 @@ define('lg_lookup_filter_timegroup_label','Zeit');
 define('lg_lookup_filter_timegroup_today','Heute');
 define('lg_lookup_filter_timegroup_yesterday','Gestern');
 define('lg_lookup_filter_timegroup_older','älter');
+define('lg_lookup_filter_nps', 'NPS Score');
+define('lg_lookup_filter_csat', 'CSAT Score');
 
 // workflow
 define('lg_wf_open','Offen');
@@ -325,7 +342,6 @@ define('lg_hiddenemail','versteckte mail historie');
 define('lg_noresults','Keine Einträge gefunden');
 define('lg_noresults_inbox','Der Posteingang ist leer');
 define('lg_noresults_filter','Keine Einträge zu diesen Kriterien');
-define('lg_noresults_myq','Sie haben keine offenen Anfragen');
 define('lg_nohistory','keine zutreffende Historie');
 define('lg_rserror','Fehler in Abfrage');
 define('lg_nextpage','nächste Seite');
@@ -337,31 +353,14 @@ define('lg_save','Speichern');
 define('lg_saving','speichern');
 define('lg_add','Hinzufügen');
 define('lg_streamview_end','Ende einer Anfrage');
-define('lg_streamview_desc_triage','TRIAGE: schnelle Anfragenzuweisung');
-define('lg_streamview_desc_stream','STREAM: Notizen dieses Filters');
 define('lg_streamview_desc_overflow','PEEK: Schnellübersicht');
-
-//Amusing quotes for when the inbox reaches 0. If you don't want these simply fill them all with the same thing
-define('lg_noresults_alt1','Posteingang leer! Good job!');
-define('lg_noresults_alt2','Hier gibts nichts zu sehen. Einfach weiter machen.');
-define('lg_noresults_alt3','Posteinang ist nicht halb voll, der Posteinang ist voll leer!');
-define('lg_noresults_alt4','"To me nothing - the negative, the empty - is exceedingly powerful." - Alan Watts');
-define('lg_noresults_alt5','I reached inbox zero, and that\'s when I came up with the idea of the Flux Capacitor.');
-define('lg_noresults_alt6','I love the smell of an empty inbox in the morning.');
-define('lg_noresults_alt7','"%s, viewing this inbox can serve no purpose anymore. Goodbye." - HAL 9000');
-define('lg_noresults_alt8','I thought inbox zero wasn\'t real? Your mind makes it real.');
-define('lg_noresults_alt9','It\'s not personal, Inbox. It\'s strictly business.');
-define('lg_noresults_alt10','Bueller?... Bueller?... Bueller?');
-define('lg_noresults_alt11','These pretzels are making me thirsty.');
-define('lg_noresults_alt12','You\'re a lean, mean, inbox clearing machine.');
-define('lg_noresults_alt13','Hasta la vista, requests');
-define('lg_noresults_alt14','Life is like the inbox, you never know what you\'re going to get.');
-define('lg_noresults_alt15','<span class="bigzero">0</span>');
-define('lg_noresults_alt16','https://www.youtube.com/embed/zpN00-UTrY0');
-define('lg_noresults_alt_lunch','Lunch is for wimps.');
-define('lg_noresults_alt_latenight',"I'll sleep when I'm dead.");
-define('lg_noresults_share','~ celebrating inbox zero with @helpspot');
-define('lg_noresults_tweet','Celebrate on Twitter');
+define('lg_thermostat_label_see_results', 'See Survey Results');
+define('lg_conditional_at_thermostat_promoter', 'promoter');
+define('lg_conditional_at_thermostat_passive', 'passive');
+define('lg_conditional_at_thermostat_detractor', 'detractor');
+define('lg_conditional_at_thermostat_satisfied', 'satisfied');
+define('lg_conditional_at_thermostat_dissatisfied', 'dissatisfied');
+define('lg_requestchanged', 'Request Changed');
 
 //No match for searches
 define('lg_search_nomatch','Keine Übereinstimmung');
@@ -380,7 +379,6 @@ define('lg_globalfilters','globale Filter');
 
 //Select multiple fields
 define('lg_addallstaff','Alles hinzufügen');
-define('lg_removeallstaff','Alles entfernen');
 define('lg_expand','Erweitern');
 define('lg_subscribeall','ausgewähle Abonnieren');
 
@@ -403,7 +401,6 @@ define('lg_tm_actionspam','SPAM');
 define('lg_tm_skip','Skip');
 
 // Person Status Type
-define('lg_ps_is','is');
 define('lg_ps_viewingrequest','diese Anfrage <strong>ansehen</strong>');
 define('lg_ps_editingrequest','diese Anfrage <strong>editieren</strong>');
 
@@ -439,10 +436,10 @@ NAVIGATION
 define('lg_adminhome','Admin');
 define('lg_admin_categories_nav','Kategorien');
 define('lg_admin_users_nav','Staff');
-define('lg_admin_emailstaff','Email Staff');
 define('lg_admin_mailboxes_nav','Email Postfächer');
 define('lg_admin_status_nav','Statusarten');
 define('lg_admin_groups_nav','Berechtigungsgruppe');
+define('lg_admin_customize_admin_nav', 'Customize Admin');
 define('lg_admin_themes_nav','Themes');
 define('lg_admin_tools_nav','Schalter & Regeln');
 define('lg_admin_data_nav','Planen');
@@ -458,24 +455,28 @@ define('lg_queue','Arbeitsplatz');
 define('lg_myq','Meine Anfragen');
 define('lg_subscriptions','Abonnement');
 define('lg_reminders','Erinnerungen');
+define('lg_darkmode_on', 'Dark Mode: On');
+define('lg_darkmode_off', 'Dark Mode: Off');
 define('lg_todayboard','ToDo Board');
 define('lg_wallboard','Wandtafel');
 define('lg_filter_requests_nav','Filter erstellen');
 define('lg_responses_nav','Antworten');
 define('lg_orderkb_nav','Bestellung ausführen');
-define('lg_orderforums_nav','Forum Bestellung');
+define('lg_sidebar_show', 'Show Sidebar');
+define('lg_sidebar_hide', 'Hide Sidebar');
 define('lg_newrequest','Erstelle Anfrage');
 define('lg_forum','Forum');
 define('lg_reports','Reports');
-define('lg_welcome','in Helpspot Einsteigen');
+define('lg_search_tab', 'Search');
 define('lg_search','ID oder Kunde');
 define('lg_search_history','Such History');
 define('lg_search_kb','Knowledge Books');
 define('lg_search_forum','Suche: Forum');
-define('lg_advsearch','erweiterte Suche');
 define('lg_kb','Wissensdatenbank');
+define('lg_responses', 'Antworten');
 define('lg_admin_tools_sysinfo','System Information');
 define('lg_admin_tools_filtermgmt','Filter Management');
+define('lg_admin_tools_jobsmgmt', 'Failed Jobs');
 define('lg_admin_tools_responsemgmt','Antworten Management');
 define('lg_admin_tools_archive','Archivierungstool');
 define('lg_admin_tools_errorlog','Fehler Log');
@@ -483,15 +484,13 @@ define('lg_admin_tools_email','Email Templates');
 define('lg_admin_tools_templates','Portal Templates');
 define('lg_admin_tools_reqfields','benutzerdefinierte Felder');
 define('lg_admin_tools_mailrules','Mail Regeln');
-define('lg_admin_tools_mailrules_info','Reagiert auf ankommende Anfragen wie ein Desktop mail client.');
 define('lg_admin_tools_auto','Automation Regel');
-define('lg_admin_tools_auto_info','Geplante Aktionen für SLA\'S, routing  und andere Eskalationen');
 define('lg_admin_tools_triggers','Schalter');
-define('lg_admin_tools_triggers_info','Echtzeitaktionen wie Anfragen wurden erstellt / aktualisiert');
 define('lg_admin_tools_portals','weitere Portale');
 define('lg_admin_integration_surveytools','Umfragetools');
 define('lg_custom_pages','benutzerdefinierte Seiten');
 define('lg_admin_integrations','Integrationen');
+define('lg_admin_customer_tools', 'Customer Tools');
 
 /*****************************************
 MAIL SUBJECTS
@@ -564,6 +563,7 @@ define('lg_placeholderspopup_kburl','Wissensdatenbank URL');
 define('lg_placeholderspopup_forum','Forum URL');
 define('lg_placeholderspopup_subject','Email Betreffzeile');
 define('lg_placeholderspopup_origsubject','Original Email Betreffzeile');
+define('lg_placeholderspopup_mobilelink','Mobile app request link');
 define('lg_placeholderspopup_initialrequest','Anfragen Notiz');
 define('lg_placeholderspopup_trackerid','Tracking ID - {#####}');
 define('lg_placeholderspopup_message','Notiz');
@@ -605,6 +605,7 @@ SPECIAL
 define('lg_no_subject','kein Betreff');
 define('lg_loop_break','Anfrage %s steckt möglicherweise in einer Mailschlaufe fest mit %s.');
 define('lg_autoreply_loop_break','Die Mailbox wurde durch ein "auto reply mail loop" behindert mit %s.');
+define('lg_history_over_limit', 'Request %s is over the max limit for notes and the email from %s is now discarded.');
 
 /*****************************************
 CALENDAR
@@ -642,4 +643,10 @@ define('lg_cal_sdn_we','Mi');
 define('lg_cal_sdn_th','Do');
 define('lg_cal_sdn_fr','Fr');
 define('lg_cal_sdn_sa','Sa');
-?>
+
+/*****************************************
+Notifications
+ *****************************************/
+define('lg_not_email_send_error', 'Email send error for request');
+define('lg_not_see_details', 'See Details');
+define('lg_not_dismiss', 'Dismiss');

@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -47,7 +49,6 @@ define('lg_conditional_mra_movetoinbox','in Postfach verschieben');
 define('lg_conditional_mra_notify','Emailbenachrichtigung senden an');
 define('lg_conditional_mra_instantreply','direkte Antwort');
 define('lg_conditional_mra_addprivatenote','private Notiz hinzufügen');
-
 
 define('lg_conditional_at_userid','Kunden ID');
 define('lg_conditional_at_xrequest','Anfrage ID');
@@ -139,7 +140,16 @@ define('lg_conditional_at_notifyexternal','An externe email adresse senden');
 
 define('lg_conditional_at_emailcustomer','Email Kunde');
 define('lg_conditional_at_emailresults','Email Table of Results to');
+define('lg_conditional_at_subscribestaff', 'Subscribe Staff');
+define('lg_conditional_at_unsubscribestaff', 'Unsubscribe Staff');
 define('lg_conditional_at_requestpush','Perform a Request Push');
+define('lg_conditional_at_thermostat_send', 'Send a Thermostat Survey');
+define('lg_conditional_at_thermostat_add_email', 'Add Email to Survey Campaign');
+define('lg_conditional_at_thermostat_nps_score', 'Thermostat NPS Score');
+define('lg_conditional_at_thermostat_csat_score', 'Thermostat CSAT Score');
+define('lg_conditional_at_thermostat_feedback', 'Has Thermostat Feedback');
+define('lg_conditional_at_thermostat_has_feedback', 'has feedback');
+define('lg_conditional_at_thermostat_does_not_have_feedback', 'doesn\'t have feedback');
 define('lg_conditional_at_norequestpush','You have not enabled any Request Push classes. <a href="http://www.helpspot.com/helpdesk/index.php?pg=kb.page&id=153" target="_blank">Find out more about Request Push</a>.');
 define('lg_conditional_at_webhook','POST a webhook to this URL:');
 define('lg_conditional_at_pushto','Push To');
@@ -148,6 +158,7 @@ define('lg_conditional_at_lessthan','weniger als');
 define('lg_conditional_at_greaterthan','mehr als');
 
 define('lg_conditional_at_ogadvanced','erweitert');
+define('lg_conditional_at_ogintegrations', 'Integrations');
 define('lg_conditional_at_ogcustinfo','Kundeninformationen');
 define('lg_conditional_at_ogreqdetails','Anfragedetails');
 define('lg_conditional_at_ogassignmentchain','Zuordnungskette');
@@ -195,4 +206,3 @@ define('lg_conditional_tr_nolivelookup','Live Lookup einrichten: <a href="http:/
 define('lg_conditional_tr_webhook','POST a webhook to this URL:');
 
 define('lg_conditional_setreptags','Reporting Tags setzen');
-?>

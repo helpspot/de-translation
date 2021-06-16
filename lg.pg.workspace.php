@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -12,19 +14,18 @@ if (!defined('cBASEPATH')) die();
 define('lg_workspace_title','Arbeitsplatz');
 
 define('lg_workspace_options','Optionen');
+define('lg_workspace_stream', 'Stream');
 
 define('lg_workspace_filterop','Filter Optionen');
 define('lg_workspace_mkdefault','als Standart Arbeitsplatz setzen');
 define('lg_workspace_edit','Filter bearbeiten');
 define('lg_workspace_delete','Filter löschen');
-define('lg_workspace_grid','Tabellenansicht');
-define('lg_workspace_stream','Note Stream');
+define('lg_workspace_filter_options', 'Options');
 define('lg_workspace_report','Report Ansicht');
 define('lg_workspace_triage','Request Triage');
 define('lg_workspace_rss','RSS Feed');
 define('lg_workspace_export','CSV Export');
 define('lg_workspace_triagepanel','Triaging');
-define('lg_workspace_triageassign','zuweisen');
 define('lg_workspace_triagecategory','Kategorie');
 define('lg_workspace_triageassignto','zuweisen an');
 define('lg_workspace_deleteconf','Möchten Sie diesen Filter wirklich löschen?');
@@ -38,6 +39,8 @@ define('lg_workspace_close','Schliessen');
 define('lg_workspace_respond','Batch Antwort');
 define('lg_workspace_markdelspam','SPAM löschen');
 define('lg_workspace_moveto','neu zuweisen');
+define('lg_workspace_select', 'Select');
+define('lg_workspace_selectall', 'Select All');
 define('lg_workspace_selectcat','Kategorie auswählen');
 define('lg_workspace_assignto','zuweisen an');
 define('lg_workspace_selstatus','Status auswählen');

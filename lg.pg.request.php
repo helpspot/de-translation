@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -21,7 +23,11 @@ define('lg_request_note','Notiz');
 define('lg_request_newrequest','Neue Anfrag');
 define('lg_request_batchreply','Batch Antwort');
 define('lg_request_customer','Kunde'); //used sep from above
+define('lg_request_customer_edit', 'Edit');
 define('lg_request_livelookup','Live Lookup');
+define('lg_request_starttimer', 'Start Timer');
+define('lg_request_stoptimer', 'Stop Timer');
+define('lg_request_timetrackeroptions', 'Options');
 define('lg_request_timetracker','Zeiterfassung');
 define('lg_request_timeevents','Time Events');
 define('lg_request_timeevents_for','For Date');
@@ -42,6 +48,7 @@ define('lg_request_publicview','Öffentliche Notizen');
 define('lg_request_justnotes','Nur Notizen');
 define('lg_request_fileview','Dateien');
 define('lg_request_cancel','Entfernen');
+define('lg_request_contactedvia_short', 'Via');
 define('lg_request_contactedvia','Kontaktiert via');
 define('lg_request_category','Kategorie');
 define('lg_request_notedrafts','Entwurfe');
@@ -60,6 +67,7 @@ define('lg_request_assignedto','zugewiesen an');
 define('lg_request_assignedto_change','Zuweisen...');
 define('lg_request_reportingtags','Reporting Tags');
 define('lg_request_isurgent','Dringend');
+define('lg_request_isnoturgent', 'Mark Urgent');
 define('lg_request_status','Status');
 define('lg_request_custupdate','öffentlich');
 define('lg_request_custupdatepriv','Privat');
@@ -105,6 +113,8 @@ define('lg_request_search4','KundenID übereinstimmend');
 define('lg_request_search5','Email Domain übereinstimmend');
 define('lg_request_search6','Vorname übereinstimmend');
 define('lg_request_search7','Nachname übereinstimmend');
+define('lg_request_search8', 'Search');
+define('lg_request_search9', 'Results');
 define('lg_request_searchnomatch','keine Übereinstimmung');
 define('lg_request_insertdata','Kundeninformation hinzufügen');
 define('lg_request_mergerequest','Zusammenfügen');
@@ -116,7 +126,6 @@ define('lg_request_batchwarninghead','Batch Information');
 define('lg_request_batchwarning','Custom field, Category, and Assignment changes here will override existing data for all selected requests. Empty custom fields will not override existing custom field information.');
 define('lg_request_batchwarning2','Filter erstellen für spätere Aktualisierungen');
 define('lg_request_reqid','ID');
-define('lg_request_options','Optionen');
 define('lg_request_pushdetailsbox','Anfrage Push Detail');
 define('lg_request_pushcomment','Kommentar (optional)');
 define('lg_request_print','Druckansicht');
@@ -213,4 +222,7 @@ define('lg_request_lose_attachment', 'Wechseln des Notizentyp bewirkt, dass die 
 define('lg_request_drop_here', 'Dateien hier ablegen um diese zu uploaden');
 define('lg_request_pin', 'Pin');
 define('lg_request_pinned', 'Pinned');
-?>
+define('lg_admin_thermostat_label_see_results', 'See Survey Results');
+define('lg_request_close', 'Close');
+define('lg_request_transfer_warning',"You are assigning this request to a category you do not have access to. After update you will no longer be able to view this request");
+define('lg_request_missing_attachment', 'The file %s was not found on the disk, please attach it again.');

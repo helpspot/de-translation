@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -15,6 +17,7 @@ define('lg_admin_categories_noshowdel','zurück zu Kategorien');
 define('lg_admin_categories_cathelp','Kategorien werden genutzt um Kunden Anfragen zu Gruppieren.');
 define('lg_admin_categories_category','Kategorie name');
 define('lg_admin_categories_categorygroup','Kategorie gruppieren');
+define('lg_admin_categories_addgroup', 'Add Group');
 define('lg_admin_categories_nogroup','keine Gruppen');
 define('lg_admin_categories_staffmem','Kategorie Staff');
 define('lg_admin_categories_staffdesc','Staff Mitglieder können Anfragen innerhalb dieser Kategorie bearbeiten');
@@ -57,4 +60,3 @@ define('lg_admin_categories_colwf','öffentlich');
 define('lg_admin_categories_colassign','Autozuweisung');
 define('lg_admin_categories_coldel','Kategorie deaktivieren');
 define('lg_admin_categories_coldelwarn','Wirklich diese Kategorie deaktivieren?');
-?>

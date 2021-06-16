@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -32,6 +34,9 @@ define('lg_admin_groups_fCanViewOwnReqsOnly','Nur eigene Anfragen können angese
 define('lg_admin_groups_fCanViewOwnReqsOnlyex','Diese Berechtigung limitiert die Darstellung (auch Such/Filterergebnisse) nur auf die eigenen Anfragen.');
 define('lg_admin_groups_fLimitedToAssignedCats','Limitiert die Darstellung nur auf die zugewiesenen Kategorien');
 define('lg_admin_groups_fLimitedToAssignedCatsex','Der Benutzer kann nur andere Benutzer sehen und denen zuweisen, solange diese in der selben Kategorie sind.');
+define('lg_admin_groups_fCanTransferRequests', 'User can transfer requests to staff in other categories');
+define('lg_admin_groups_fCanTransferRequestsex', 'This permission applies when the "Limit to assigned categories ONLY" permission is selected. Allows staff to transfer requests to categories they are not assigned to.');
+define('lg_admin_groups_fCanAdvancedSearch', 'Access the advanced search page');
 define('lg_admin_groups_fCanAdvancedSearch','Zugriff auf die erweiterte Suche');
 define('lg_admin_groups_fCanManageSpam','SPAM verwalten (markieren und löschen)');
 define('lg_admin_groups_fCanManageTrash','Papierkorb verwalten (markieren und löschen)');
@@ -48,5 +53,3 @@ define('lg_admin_groups_fbdeleted','Gruppe löschen');
 define('lg_admin_groups_fbedited','Gruppe editieren');	
 define('lg_admin_groups_fbadded','Gruppe hinzufügen');
 define('lg_admin_groups_er_groups','Bitte Gruppennamen einfügen');
-
-?>

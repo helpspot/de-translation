@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -13,24 +15,24 @@ define('lg_portal_phonesupport','Telefonsupport');
 define('lg_portal_home','Home');	
 define('lg_portal_submitrequest','Anfrage einreichen');	
 define('lg_portal_checkrequest','bestehende Anfrage ansehen');
+define('lg_portal_create_login', 'Create an account');
+define('lg_portal_loginrequired', 'Login Required');
+define('lg_portal_login_forgot', 'Forgot Password');
 define('lg_portal_requesthistory','Anfragenhistorie');
 define('lg_portal_accessidheader','Ihr Zugriffsschlüssel');
 define('lg_portal_accessnote','Der Zugriffsschlüssel oben kann benutzt werden um den Status der Anfrage zu überprüfen. <br> Für einen schnellen Zugriff kann diese Seite in den Favoriten abgelegt werden.');
 define('lg_portal_updatebox','Gibt es neuere Informationen? Nutzen Sie die Box weiter unten und aktualisieren Sie Ihre Anfrage.');
 define('lg_portal_kb','Wissensdatenbank');	
 define('lg_portal_kbprinter','Druckversion');
-define('lg_portal_forums','Forum');
 define('lg_portal_downloads','Downloads');
 define('lg_portal_relatedpages','meist angesehen');
 define('lg_portal_search','Suche');
-define('lg_portal_latesttopic','meist gelesene Forum Themen');
 define('lg_portal_helpfulpages','hilfreichste Wissensbeiträge');
 define('lg_portal_highlightedpages','Hervorgehobene Wissensbeiträge');
 define('lg_portal_searchkb','Wissensdatenbank');
 define('lg_portal_tags','Wissens Tags');
 define('lg_portal_searchtags','meist genutzte Tags');
 define('lg_portal_searchforum','Forum');
-define('lg_portal_hf','Dieser Beitrag war');
 define('lg_portal_helpful','hilfreich');
 define('lg_portal_nothelpful','nicht hilfreich');
 define('lg_portal_hasvoted','Wir danken Ihne für Ihre Bewertung');
@@ -38,12 +40,6 @@ define('lg_portal_sticky','Sticky');
 define('lg_portal_email','Email');
 define('lg_portal_postreply','Antworten auf einen Post');
 define('lg_portal_reply','Antworten');
-define('lg_portal_createatopic','Ein Thema erstellen');
-define('lg_portal_createtopic','Thema erstellen');
-define('lg_portal_topictitle','Themen Titel');
-define('lg_portal_topicclosed','Dieses Thema wurde geschlossen.');
-define('lg_portal_forumclosed','Dieses Forum wurde geschlossen.');
-define('lg_portal_emailposter','Private Nachricht an Forumnutzer schreiben');
 define('lg_portal_to','An');
 define('lg_portal_subject','Betreff');
 define('lg_portal_message','Nachricht');
@@ -57,6 +53,7 @@ define('lg_portal_posterurl','Ihre Website');
 define('lg_portal_er_topic','Bitte wählen Sie ein Thema');
 define('lg_portal_er_message','Bitte hinterlassen Sie eine Nachricht');
 define('lg_portal_er_name','Bitte einen Name hinterlassen');
+define('lg_portal_er_unique_email', 'That username already exists. <a href=index.php?pg=login.forgot>Reset your password here.</a>');
 define('lg_portal_er_validcaptcha','Bitte das Sicherheitswort eingeben');
 define('lg_portal_er_validrecaptcha','Bitte ankreuzen, dass Sie kein Roboter sind.');
 define('lg_portal_prev','vorherige Seite');
@@ -70,6 +67,7 @@ define('lg_portal_req_note','Bitte füllen Sie das ganze Formular detailiert zu 
 define('lg_portal_req_firstname','Vorname');
 define('lg_portal_req_lastname','Nachname');
 define('lg_portal_req_email','Email');
+define('lg_portal_req_cc_email', 'Also Notify Email');
 define('lg_portal_req_phone','Telefon');
 define('lg_portal_req_subject','Betreff');
 define('lg_portal_req_urgent','Ist diese Anfrage dringend?');
@@ -87,11 +85,17 @@ define('lg_portal_req_validemail','Bitte eine korrekte Emailadresse angeben');
 define('lg_portal_req_enterkey','Geben Sie Ihren Zugriffsschlüssel ein um den Stand einer Anfrage zu überprüfen.');
 define('lg_portal_subjectdefaultnew','Informationen zu Ihrer Anfrage');
 define('lg_portal_req_login','Anmelden um die ganze Anfragehistorie anzusehen');
+define('lg_portal_create_login_ex', 'Create an account to view your request history');
+define('lg_portal_login_forgot_ex', 'Reset Your Password');
 define('lg_portal_req_emailpassword','Passwort erstellen oder neu setzen');
+define('lg_portal_req_logincreate', 'Create an Account');
 define('lg_portal_req_loginemail','Email');
 define('lg_portal_req_loginusername','Username');
 define('lg_portal_req_loginpassword','Passwort');
+define('lg_portal_req_loginpassword_confirm', 'Confirm Password');
 define('lg_portal_req_loginbutton','Anmelden');
+define('lg_portal_req_createbutton', 'Create Account');
+define('lg_portal_req_pw_reset_link', 'Send Password Reset Link');
 define('lg_portal_req_loginfailed','Login fehlgeschlagen. Bitte erneut probieren.');
 define('lg_portal_req_logout','Abmelden');
 define('lg_portal_req_changepassword','Passwort wechseln');
@@ -130,7 +134,7 @@ define('lg_portal_password_reset','Ein neues Passwort für Ihren Account wurde a
 
 define('lg_portal_tagsearch','Tag');
 define('lg_portal_tagsearch_books','übereinstimmende Wissensbeiträge');
-define('lg_portal_tagsearch_forums','übereinstimmende Forumbeiträge');
+
 define('lg_portal_agree_terms_privacy', 'I agree to the <a href="%s" target="_blank">Terms of Service</a> and <a href="%s" target="_blank">Privacy Policy</a>');
 define('lg_portal_agree_terms', 'I agree to the <a href="%s" target="_blank">Terms of Service</a>');
 define('lg_portal_agree_privacy', 'I agree to the <a href="%s" target="_blank">Privacy Policy</a>');

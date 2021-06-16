@@ -22,7 +22,6 @@ define('lg_admin_automation_any','keine');
 define('lg_admin_automation_all','alle');
 define('lg_admin_automation_colid','ID');
 define('lg_admin_automation_options','Optionen');
-define('lg_admin_automation_options_nonotificaitons','Unterdrücke alle Staff Benachrichtigungen welche von der Aktion ausgelöst werden');
 define('lg_admin_automation_options_directcallonly','Nur Regel ausführen, wenn tasks2.php direkt aufgerufen wird mit dieser Regel ID.');
 define('lg_admin_automation_options_directcallonlyex','Normalerweise werden alle Regeln ausgeführt, wenn tasks2.php ausgeführt wird. Wird diese Option aktiviert, wird die Regel nicht ausgeführt wenn tasks2.php ausgeführt wird. Es sei denn, tasks2.php wird direkt ausgerufen mit der ID dieser Regel. <br /><a href="https://support.helpspot.com/index.php?pg=kb.page&id=143" target="_blank">Details - tasks2.php mit Single ID (EN)</a>.');
 define('lg_admin_automation_del','Regel deaktivieren');
