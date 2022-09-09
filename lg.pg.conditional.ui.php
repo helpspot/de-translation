@@ -152,6 +152,7 @@ define('lg_conditional_at_thermostat_has_feedback', 'has feedback');
 define('lg_conditional_at_thermostat_does_not_have_feedback', 'doesn\'t have feedback');
 define('lg_conditional_at_norequestpush','You have not enabled any Request Push classes. <a href="http://www.helpspot.com/helpdesk/index.php?pg=kb.page&id=153" target="_blank">Find out more about Request Push</a>.');
 define('lg_conditional_at_webhook','POST a webhook to this URL:');
+define('lg_conditional_at_webhook_no_history', 'POST a webhook (no history) to this URL:');
 define('lg_conditional_at_pushto','Push To');
 define('lg_conditional_at_pushcomment','Kommentar (optional)');
 define('lg_conditional_at_lessthan','weniger als');
@@ -204,5 +205,5 @@ define('lg_conditional_tr_livelookup','Live Lookup durchführen');
 define('lg_conditional_tr_nolivelookup','Live Lookup einrichten: <a href="http://www.helpspot.com/helpdesk/index.php?pg=kb.page&id=174" target="_blank">Mehr über Live Lookup (EN)</a>.');
 
 define('lg_conditional_tr_webhook','POST a webhook to this URL:');
-
+define('lg_conditional_tr_webhook_no_history', 'POST a webhook (no history) to this URL:');
 define('lg_conditional_setreptags','Reporting Tags setzen');

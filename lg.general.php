@@ -648,5 +648,6 @@ define('lg_cal_sdn_sa','Sa');
 Notifications
  *****************************************/
 define('lg_not_email_send_error', 'Email send error for request');
+define('lg_not_email_send_error_trial_limit', 'Trial daily sending limit reached');
 define('lg_not_see_details', 'See Details');
 define('lg_not_dismiss', 'Dismiss');

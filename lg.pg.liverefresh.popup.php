@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -14,4 +16,3 @@ define('lg_liverefresh_body','Live Refresh will check the server about every 30 
 							  added or updated. If changes have been found the queue/filter you are currently in will be updated. In addition, the 
 							  counts in the navigation bar will be updated to the current counts. Live Refresh maintains the state of your queue/filter
 							  so any items checked or sorting done before the refresh occurs will remain after the refresh.');
-?>

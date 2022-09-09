@@ -11,4 +11,7 @@ if (! defined('cBASEPATH')) {
 3. If you modify this file, be sure to back it up in case you overwrite it during an upgrade by accident
 */
 
-define('lg_templatepreview_nosaved','Keine benutzerdefinierten Templates gespeichert');
+define('lg_admin_customize', 'Customize');
+define('lg_admin_customize_css', 'Add Custom CSS');
+define('lg_admin_customize_js', 'Add Custom JavaScript');
+define('lg_admin_customize_save', 'Save');

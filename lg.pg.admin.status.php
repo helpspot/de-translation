@@ -25,5 +25,3 @@ define('lg_admin_status_fbundeleted','Status restored');
 define('lg_admin_status_fbedited','Status edited');	
 define('lg_admin_status_fbadded','Status added');
 define('lg_admin_status_er_status','Please fill in status');
-
-?>

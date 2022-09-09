@@ -15,4 +15,3 @@ define('lg_admin_sysinfo_phpvars','PHP Server Variables');
 define('lg_admin_sysinfo_extensions','PHP Installed Extensions');
 define('lg_admin_sysinfo_hsdb','HelpSpot Database');
 define('lg_admin_sysinfo_tablerepair','Table Repaired');
-?>

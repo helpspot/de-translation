@@ -18,4 +18,3 @@ define('lg_request_batch_smtp','SMTP Fehler, Email nicht versendet');
 define('lg_request_batch_ergeneral','Fehler, Anfrage nicht aktualisiert');
 define('lg_request_batch_batch','Batch');
 define('lg_request_batch_batchhistory','Batch History');
-?>

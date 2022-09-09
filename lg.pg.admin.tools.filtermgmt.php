@@ -19,4 +19,3 @@ define('lg_admin_filtermgmt_owner','Created By');
 define('lg_admin_filtermgmt_filters','All Filters');
 define('lg_admin_filtermgmt_noresults','No problem filters');
 define('lg_admin_filtermgmt_views','Runs');
-?>

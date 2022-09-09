@@ -36,5 +36,5 @@ define('lg_admin_rules_hourlabel','Regel aktiv');
 define('lg_admin_rules_anyhours','ganze Zeit');
 define('lg_admin_rules_bizhours','nur zu Öffnungszeiten');
 define('lg_admin_rules_offhours','nur ausserhalb der Öffnungszeiten');
+define('lg_admin_rules_options', 'Options');
 define('lg_admin_rules_options','Optionen');
-?>

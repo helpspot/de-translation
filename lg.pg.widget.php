@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -9,5 +11,4 @@ if (!defined('cBASEPATH')) die();
 3. If you modify this file, be sure to back it up in case you overwrite it during an upgrade by accident
 */
 
-define('lg_widget_opened_from','Widget opened from');
-?>
+define('lg_widget_opened_from', 'Widget opened from');

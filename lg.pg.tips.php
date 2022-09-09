@@ -77,7 +77,7 @@ define("lg_tips", [
     [
         "type" => "helpspot",
 
-        "tip" => "Finding it hard to get your knowledge books built out? Don't start big, pick your top 5 questions and write detailed resposnes to them. After that keep an eye on the Searches/Few Results report and go from there.",
+        "tip" => "Finding it hard to get your knowledge books built out? Don't start big, pick your top 5 questions and write detailed responses to them. After that keep an eye on the Searches/Few Results report and go from there.",
     ],
     [
         "type" => "support",

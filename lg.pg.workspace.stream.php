@@ -11,8 +11,6 @@ if (!defined('cBASEPATH')) die();
 
 define('lg_workspacestream_title','Workspace Stream');
 define('lg_workspacestream_streaming','Live Streaming');
-define('lg_workspacestream_streamex','Real time view of the request history for requests in this filter');
-define('lg_workspacestream_live','LIVE');
 define('lg_workspacestream_grid','Grid');
 define('lg_workspacestream_stream','Staff Only');
 define('lg_workspacestream_streamwpriv','Staff Only w/ Private');

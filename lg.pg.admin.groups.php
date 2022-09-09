@@ -36,7 +36,6 @@ define('lg_admin_groups_fLimitedToAssignedCats','Limitiert die Darstellung nur a
 define('lg_admin_groups_fLimitedToAssignedCatsex','Der Benutzer kann nur andere Benutzer sehen und denen zuweisen, solange diese in der selben Kategorie sind.');
 define('lg_admin_groups_fCanTransferRequests', 'User can transfer requests to staff in other categories');
 define('lg_admin_groups_fCanTransferRequestsex', 'This permission applies when the "Limit to assigned categories ONLY" permission is selected. Allows staff to transfer requests to categories they are not assigned to.');
-define('lg_admin_groups_fCanAdvancedSearch', 'Access the advanced search page');
 define('lg_admin_groups_fCanAdvancedSearch','Zugriff auf die erweiterte Suche');
 define('lg_admin_groups_fCanManageSpam','SPAM verwalten (markieren und löschen)');
 define('lg_admin_groups_fCanManageTrash','Papierkorb verwalten (markieren und löschen)');

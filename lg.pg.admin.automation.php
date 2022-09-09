@@ -50,3 +50,8 @@ define('lg_admin_automation_sorttitle','Automations Regel Reihenfolge');
 define('lg_admin_automation_note','Automationsregeln nutzen um Anfragen zu eskalieren, Staff und Kunden zu informieren, Zugehörigkeiten zu wechseln und vieles mehr. Achtung, Automationsregeln können ungewollte Aktionen auslösen, wenn diese nicht korrekt hinterlegt werden. Es sollte immer sichergestellt werden, dass die gewünschten Kriterien einwandfrei funktionieren, bevor diese Gespeichert werden. Eine ausgeführte Regel kann nicht wieder rückgängig gemacht werden.');
 define('lg_admin_automation_confirm','Sind Sie sicher, dass Sie diese Regel speichern möchten? Die Regel wird gleich ausgeführt..');
 define('lg_admin_automation_once', 'Run this rule once per request');
+define('lg_admin_automation_options_bizhours', 'Business Hour Rules');
+define('lg_admin_automation_options_bizhoursex', 'Run this rule only during business hours, outside of business hours, or for the entire day.');
+define('lg_admin_automation_options_sBizHours_in', 'Business Hours Only');
+define('lg_admin_automation_options_sBizHours_out', 'Outside of Business Hours Only');
+define('lg_admin_automation_options_sBizHours_all', 'At All Times');

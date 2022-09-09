@@ -80,4 +80,3 @@ define('lg_admin_cfields_colreq', 'Required');
 define('lg_admin_cfields_colpub', 'Public');
 define('lg_admin_cfields_erfieldname', 'Please enter a name for the field');
 define('lg_admin_cfields_textsize_msg', 'Note this change only affects the displayed field size. Check the <a href=\"https://support.helpspot.com/index.php?pg=kb.page&id=537\" target=\"_blank\">Administrator Manual</a> for more information about changing the database field size.');
-?>

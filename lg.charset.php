@@ -1,4 +1,5 @@
 <?php
+
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
 if (! defined('cBASEPATH')) {
     die();

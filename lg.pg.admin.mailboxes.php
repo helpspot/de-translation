@@ -22,17 +22,20 @@ define('lg_admin_mailboxes_options','Optionen');
 define('lg_admin_mailboxes_emailtemplates','Email Vorlagen');
 define('lg_admin_mailboxes_insertdefault','Standartwert übernehmen');
 define('lg_admin_mailboxes_trackidmissing','Tracking ID (##TRACKING_ID##) is missing from the subject line of Public Note to Customer. Omitting this will prevent HelpSpot from correctly threading responses.');
+define('lg_admin_mailboxes_explain', 'Configuring a mailbox allows HelpSpot to accept mail from a specified email account.');
 define('lg_admin_mailboxes_help','Configuring a mailbox allows HelpSpot to check mail from a specified email account. Incoming messages are filtered for spam and turned into requests.
 									Administrators can opt to specify automated assignment to categories and corresponding default staff member. ');
 define('lg_admin_mailboxes_mailbox','Mailbox');
 define('lg_admin_mailboxes_archive', 'Archive Mail');
 define('lg_admin_mailboxes_archive_note', 'With this enabled mail will be moved to a "helpspot_archive_folder" instead of deleting the email. This only works with imap.');
+define('lg_admin_mailboxes_archive_note_oauth', 'Mail will be moved to the "archived" folder instead of to the trash.');
 define('lg_admin_mailboxes_deletemsg', 'Note: HelpSpot deletes emails from the mailbox if this is disabled.');
 define('lg_admin_mailboxes_mbuser','Username');
 define('lg_admin_mailboxes_mbhost','Host Name');
 define('lg_admin_mailboxes_mbpass','Passwort');
 define('lg_admin_mailboxes_mbpass_confirm','Passwort bestätigen');
 define('lg_admin_mailboxes_mbport','Port');
+define('lg_admin_mailboxes_mbconnectionoptions', 'Connection Options');
 define('lg_admin_mailboxes_mbtype','Account Typ');
 define('lg_admin_mailboxes_mbsecurity','Security Typ');
 define('lg_admin_mailboxes_mbsecurityex','wird für sichere Mailverbindungen benutzt');
@@ -92,6 +95,8 @@ define('lg_admin_mailboxes_fbadded','Postfach hinzugefügt');
 define('lg_admin_mailboxes_fbedited','Postfach bearbeitet');
 define('lg_admin_mailboxes_fbdeleted','Postfach wurde deaktiviert');
 define('lg_admin_mailboxes_fbundeleted','Postfach wiederhergestellt');
+define('lg_admin_mailboxes_fbdeleted_outgoing', 'Mailbox could not be deleted because it is set as the default outgoing email account. Please first remove this mailbox as the default at Admin > Settings > Email Integration before deactivating this mailbox.');
+define('lg_admin_mailboxes_fbundeleted', 'Mailbox restored');
 define('lg_admin_mailboxes_outbound','Outbound Email');
 define('lg_admin_mailboxes_outboundex','Es können die standart SMTP Einstellungen des Systems genutzt werden (Admin - Einstellungen) oder es werden für dieses Postfach spezifische SMTP Einstellungen gesetzt.');
 define('lg_admin_mailboxes_outbounduse','nutzbare SMTP Einstellungen');
@@ -144,3 +149,14 @@ Wissensdatenbank: <a href="##KNOWLEDGEBOOKURL##">##KNOWLEDGEBOOKURL##</a></p>
 </body>
 </html>
 ');
+
+define('lg_admin_mailboxes_oauth_instructions', 'Instructions');
+define('lg_admin_mailboxes_oauth_label_auth_token', 'Authentication Credentials');
+define('lg_admin_mailboxes_oauth_label_auth_token_ex', 'The authentication credentials created at <a target="_blank" href="https://auth.helpspot.com">https://auth.helpspot.com</a>');
+define('lg_admin_mailboxes_oauth_instruction_msg', '<strong>HelpSpot requires authentication credentials to retrieve emails from %s</strong>.
+                <br><br> To configure this mailbox:
+                <ol>
+                    <li>Generate credentials using the <a target="_blank" href="https://auth.helpspot.com">HelpSpot Email Authentication service</a>.</li>
+                    <li>Copy and paste the generated credentials below.</li>
+                </ol>');
+define('lg_admin_mailboxes_oauth_credentials_placeholder', 'Value encrypted, add new credentials here to overwrite');

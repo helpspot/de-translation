@@ -1,7 +1,9 @@
 <?php
 
 // SECURITY: Don't allow direct calls to this file outside the context of HelpSpot
-if (!defined('cBASEPATH')) die();
+if (! defined('cBASEPATH')) {
+    die();
+}
 
 /* EDITING NOTES
 1. Some strings contain %s symbols, these must be maintained
@@ -9,12 +11,11 @@ if (!defined('cBASEPATH')) die();
 3. If you modify this file, be sure to back it up in case you overwrite it during an upgrade by accident
 */
 
-define('lg_custworkspace_title','Arbeitsplatz anpassen');
-define('lg_custworkspace_inbox','Posteingang Spalten anpassen');
-define('lg_custworkspace_myq','"Meine Anfragen" Spalten anpassen');
-define('lg_custworkspace_selectcol','Spalte auswählen um hinzuzufügen');
-define('lg_custworkspace_removecol','Spalte wirklich entfernen?');
-define('lg_custworkspace_setcolumnwidthsave','Speichern');
-define('lg_custworkspace_setcolumnwidthnote','leer lassen für eine Zwischenspalte');
-define('lg_custworkspace_setcolumnwidthfill','This column always fills');
-?>
+define('lg_custworkspace_title', 'Customize Workspace');
+define('lg_custworkspace_inbox', 'Customize Inbox Columns');
+define('lg_custworkspace_myq', 'Customize My Queue Columns');
+define('lg_custworkspace_selectcol', 'Select a column to add');
+define('lg_custworkspace_removecol', 'Are you sure you want the remove this column?');
+define('lg_custworkspace_setcolumnwidthsave', 'Save');
+define('lg_custworkspace_setcolumnwidthnote', 'blank for a fill column');
+define('lg_custworkspace_setcolumnwidthfill', 'This column always fills');

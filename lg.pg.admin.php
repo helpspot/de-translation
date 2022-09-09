@@ -32,4 +32,3 @@ define('lg_home_admin_maintenance_button','Wartungsmodus aktivieren');
 define('lg_home_admin_maintenance_button_conf','Sind Sie sicher?');
 define('lg_home_admin_addlicenses','Lizenz hinzufügen');
 define('lg_home_admin_unlimited','Seitenlizenz');
-?>

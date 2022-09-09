@@ -70,4 +70,3 @@ define('lg_workspace_viewable_onlyme','Nur Ich');
 define('lg_workspace_viewable_permstaff','freigegebener Staff');
 define('lg_workspace_viewable_everyone','Jede/r');
 define('lg_workspace_viewable_group','Gruppe');
-?>
