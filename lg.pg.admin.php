@@ -23,7 +23,7 @@ define('lg_home_admin_licuploadok','Neue Lizenz wurde heraufgeladen');
 define('lg_home_admin_licnotvalid','Lizenz nicht gültig. Bitte überprüfen ob die aktuellste Lizenz geuploadet wurde.');
 define('lg_home_admin_toomanyusers','Es sind mehr aktive User registriert als die Lizenz zulässt. Bitte User deaktivieren oder die Lizenz anpassen.');
 define('lg_home_admin_customerid','Kunden ID');
-define('lg_home_admin_licusers', 'Staff/%s Licenses');
+define('lg_home_admin_licusers', 'Staff/%s Lizenzen');
 define('lg_home_admin_licsupport', 'Subscription Period');
 define('lg_home_admin_version','HelpSpot Version');
 define('lg_home_admin_maintenance','Wartungsmodus Mode');
