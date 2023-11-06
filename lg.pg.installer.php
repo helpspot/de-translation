@@ -28,7 +28,7 @@ define('lg_inst_validemail', 'Please provide a valid email');
 define('lg_inst_validpassword', 'Please provide a password');
 define('lg_inst_checkdb', 'Can connect to database');
 define('lg_inst_checknotdb', 'HelpSpot can not connect to the database. Please check your database settings in the .env file.');
-define('lg_inst_checkmysql4', 'MySQL 4.1.2 or greater required.');
+define('lg_inst_checkmysql4', 'MySQL 5.6 or greater required.');
 define('lg_inst_checkmysql4update', 'Your MySQL database is less than version 4.1.2. HelpSpot 2.0 and higher require MySQL 4.1.2 or greater. Please upgrade your database and then continue the HelpSpot upgrade.');
 define('lg_inst_checkdberror', 'Error reported');
 define('lg_inst_checkdbmssql', 'Check that the database user is running as owner and that you are using SQL Authentication. If you continue to have trouble please visit our SQL Server <a href="https://support.helpspot.com/index.php?pg=kb.page&id=13">troubleshooting page</a>.');
@@ -315,19 +315,18 @@ any customizations have been made to the templates listed below.</p>
 define('lg_inst_welcomereq', '
 Welcome to HelpSpot!
 
-Don\'t forget to visit our Knowledge Books [1] and Forums [2] for documentation and usage tips.  Feedback is always welcome, so drop us a line customer.service@userscape.com or submit a request [3].
+Don\'t forget to visit our Knowledge Books [1] for documentation and usage tips.  Feedback is always welcome, so drop us a line customer.service@userscape.com or submit a request [2].
 
-I would also recommend taking a look through the settings under Admin->Settings. There are many features there which will allow you to customize your installation. If you want to add custom fields to track additional data with requests you can add them from Admin->Tools.
+I would also recommend taking a look through the settings under Admin -> Settings. There are many features there which will allow you to customize HelpSpot. To give one example, if you want to add custom fields to track additional data with requests, you can add them from Admin -> Custom Fields.
 
 For a quick overview on how to get started, try the getting started guide:
-https://support.helpspot.com/index.php?pg=kb.page&id=5
+[https://support.helpspot.com/index.php?pg=kb.book&id=11](https://support.helpspot.com/index.php?pg=kb.book&id=11). If you have any questions or need help figuring out how to do something in HelpSpot, don’t hesitate to let us know - we’re always here to help!
 
 Sincerely,
 Ian Landsman, Founder
 
-[1] - https://support.helpspot.com/index.php?pg=kb
-[2] - https://support.helpspot.com/index.php?pg=forums
-[3] - https://support.helpspot.com/index.php?pg=request');
+[1] - [https://support.helpspot.com/index.php?pg=kb](https://support.helpspot.com/index.php?pg=kb)
+[2] - [https://support.helpspot.com/index.php?pg=request](https://support.helpspot.com/index.php?pg=request)');
 
 //START OF EMAIL TEMPLATES. - TO CHANGE THESE TEMPLATES IN YOUR INSTALLATION GO TO Admin->Tools->Modify Email Templates
 define('lg_inst_et_portal_reqcreated', '

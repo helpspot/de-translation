@@ -127,3 +127,4 @@ define('lg_theme_changed', 'Your theme has been changed');
 define('lg_admin_portaltemplates_savebutton', 'Save Template');
 define('lg_admin_portaltemplates_viewprev', 'View previous customizations for');
 define('lg_admin_portaltemplates_originaltemplate', 'Original Template');
+define('lg_translate_error', 'There was an error translating your note:');

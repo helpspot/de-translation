@@ -231,4 +231,6 @@ define('lg_reports_email_to', 'Staff to email');
 define('lg_reports_email_external', 'Outside emails');
 define('lg_reports_email_external_txt', 'Separate with a comma or a new line.');
 define('lg_reports_email_external_error', 'The following emails are invalid: ');
+define('lg_reports_email_embed_error', 'This report must be viewed in HelpSpot');
+define('lg_reports_request_category', 'Request Category');
 ?>

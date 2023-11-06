@@ -63,7 +63,9 @@ define('lg_reattach','neu Anhängen');
 define('lg_admin','Administrator');
 define('lg_loadingwait','Wird geladen ..... bitte warten');
 define('lg_noassign','nicht zugewiesen');
+define('lg_refer', 'Referral Program');
 define('lg_documentation','Hilfe');
+define('lg_videos', 'Video Training');
 define('lg_forums','Forums');
 define('lg_academy','Training');
 define('lg_rss','RSS Feed');
@@ -111,9 +113,15 @@ define('lg_systemname','System');
 define('lg_systemnameportal','Help Desk Nachrichten');
 define('lg_jsmenu_appresponseempty','nicht Verfügbar. Die Button oben benutzen um zu erstellen.');
 define('lg_response_shortcut', 'Type # for autocompletion');
-define('lg_jsmenu_nokb','Keine  knowledge books verfügbar');
+define('lg_ai_shortcut', 'Type ! for autocompletion');
+define('lg_jsmenu_nokb','Keine knowledge books verfügbar');
+define('lg_jsmenu_noai', 'HelpSpot AI must be enabled by an admin');
+define('lg_jsmenu_aiprocessing', 'HelpSpot AI is Processing Your Request');
 define('lg_jsmenu_respmostused','meis genutzt');
 define('lg_jsmenu_manageresponses','Antworten verwalten');
+define('lg_jsmenu_rewriteasakb', 'Rewrite as a KB');
+define('lg_jsmenu_summarizerequesthistory', 'Summarize Request History');
+define('lg_jsmenu_summarize', 'Summarize');
 define('lg_textversion','Text Version');
 define('lg_htmlversion','HTML Version');
 define('lg_subjectline','Betreffzeile');
@@ -145,6 +153,7 @@ define('lg_inline_image','Bilder');
 define('lg_checkbox_checkall', 'selektieren/Alle deselektieren');
 define('lg_latestblog', 'Neuigkeiten von HelpSpot');
 define('lg_newsblog', 'Neuigkeiten');
+define('lg_close_softphone', 'Close Softphone');
 
 define('lg_passwordresetfor','Passwort vergessen link für: %s');
 define('lg_passwordresetcomplete','Passwort vergessen link für: %s');
@@ -491,6 +500,10 @@ define('lg_admin_integration_surveytools','Umfragetools');
 define('lg_custom_pages','benutzerdefinierte Seiten');
 define('lg_admin_integrations','Integrationen');
 define('lg_admin_customer_tools', 'Customer Tools');
+define('lg_admin_ai_nav', 'HelpSpot AI');
+define('lg_admin_ai_prompts', 'AI Prompts');
+define('lg_admin_ai_settings', 'AI Settings');
+define('lg_admin_manage_subscription', 'Manage Subscription');
 
 /*****************************************
 MAIL SUBJECTS
@@ -651,3 +664,9 @@ define('lg_not_email_send_error', 'Email send error for request');
 define('lg_not_email_send_error_trial_limit', 'Trial daily sending limit reached');
 define('lg_not_see_details', 'See Details');
 define('lg_not_dismiss', 'Dismiss');
+define('lg_not_mailbox_check_error', 'A mailbox has not been checked successfully. Error On Mailbox ID: ');
+
+/*****************************************
+AI
+ *****************************************/
+define('lg_ai_input_too_short', 'The input text is too short. Please enter at least 40 characters.');
