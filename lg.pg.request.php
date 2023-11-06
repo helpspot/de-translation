@@ -230,3 +230,8 @@ define('lg_request_close', 'Close');
 define('lg_request_transfer_warning',"You are assigning this request to a category you do not have access to. After update you will no longer be able to view this request");
 define('lg_request_missing_attachment', 'The file %s was not found on the disk, please attach it again.');
 define('lg_request_er_tag_mismatch', 'A variable you inserted is mismatched. Please make sure that all variables you used in your note are wrapped in two curly brackets. Like this: {{ $var }}');
+define('lg_request_drilldown_value_error', 'no longer has a valid value. This is most likely due to the removal of options by an administrator. Please reset this field to a valid value.');
+define('lg_request_translate_history', 'Translate');
+define('lg_request_translation_loading', 'Loading Translation');
+define('lg_request_translation_error_title', 'Translation Failed');
+define('lg_request_translation_error', 'Your request history item failed to translate');

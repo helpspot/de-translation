@@ -160,3 +160,4 @@ define('lg_admin_mailboxes_oauth_instruction_msg', '<strong>HelpSpot requires au
                     <li>Copy and paste the generated credentials below.</li>
                 </ol>');
 define('lg_admin_mailboxes_oauth_credentials_placeholder', 'Value encrypted, add new credentials here to overwrite');
+define('lg_admin_mailboxes_last_import_success', 'Last Successful Check');
